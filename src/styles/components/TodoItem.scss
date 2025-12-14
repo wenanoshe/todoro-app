@@ -5,11 +5,11 @@
   height: 5rem;
   background-color: $white-1;
   border-radius: $radius;
-  padding: 0 3rem;
+  padding: 0 1.5rem;
   overflow: hidden;
 
   &--completed {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 
   &__body {
@@ -21,15 +21,6 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-
-    &::-webkit-scrollbar {
-      height: 3px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: $black-3;
-      border-radius: 3px;
-    }
   }
 
   &__actions {

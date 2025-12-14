@@ -1,6 +1,10 @@
 @use "../vars" as *;
 
 .todos {
+  max-height: 80%;
+  overflow-y: auto;
+  scrollbar-width: thin;
+
   &__form {
     @include flex(space-between, center, row, 2%);
   }
@@ -55,23 +59,23 @@
     list-style: none;
     margin-top: 2.4rem;
     padding: 0;
-    @include flex(strech, strech, column, 1rem);
+    @include flex(stretch, stretch, column, 1rem);
   }
 
-  // Whitout todos
-  &__noTodos {
+  // Without todos
+  &__empty {
     margin-top: 4%;
     @include flex(center, center, column);
     align-items: center;
 
-    &Img {
+    &-img {
       height: 100%;
       transform: translateX(13%);
     }
-  }
 
-  &__stm {
-    color: $black-3;
-    font-family: $open-sans;
+    &-stm {
+      color: $black-3;
+      font-family: $body-font;
+    }
   }
 }

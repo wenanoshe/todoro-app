@@ -1,0 +1,30 @@
+@use "../vars" as *;
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style-type: none;
+  padding: 0;
+
+  &__btn {
+    padding: 0.5rem 1rem;
+    border-radius: $radius;
+    transition: $speed;
+    text-decoration: none;
+    color: $black-2;
+
+    &:hover:not(:disabled):not(.filters__btn--active) {
+      background-color: $white-1;
+    }
+
+    &:active:not(:disabled):not(.filters__btn--active) {
+      transform: scale(0.9);
+    }
+  }
+
+  &__btn--active {
+    background-color: $pale-blue;
+    color: $white;
+  }
+}
