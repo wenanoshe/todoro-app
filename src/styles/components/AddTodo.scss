@@ -45,7 +45,7 @@
     transition: background-color $speed ease;
 
     &:hover {
-      background-color: darken($pale-blue, 5%);
+      background-color: color.adjust($pale-blue, $lightness: -5%);
     }
   }
 }
