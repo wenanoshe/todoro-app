@@ -5,6 +5,7 @@
   height: 100%;
   @include flex(center, center);
   padding: 2rem;
+  font-size: 18px;
 }
 
 .app {
@@ -13,18 +14,18 @@
   height: 100%;
   background-color: $white;
   color: $black;
-  box-shadow: 0 0 10px 10px hsla(0, 0, 0, 0.1);
-  padding: 5.2rem;
+  padding: 4.2rem;
   border-radius: $radius;
+  border: 2px solid $black-3;
   margin: 0;
-  font-family: $open-sans;
+  font-family: $body-font;
 
   &__title {
     margin-top: 0;
     font-size: 3.6rem;
     font-weight: 700;
     line-height: 4.223rem;
-    font-family: $work-sans;
+    font-family: $body-font;
   }
 }
 
@@ -35,4 +36,13 @@
   .app {
     padding: 3rem 2rem;
   }
+}
+
+button:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+a {
+  font-weight: 500;
 }

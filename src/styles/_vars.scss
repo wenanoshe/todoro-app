@@ -17,11 +17,9 @@ $speed: 300ms;
 
 /*Fonts*/
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 
-$work-sans: "Work Sans", sans-serif;
-$roboto: "Roboto", sans-serif;
-$open-sans: "Open Sans", sans-serif;
+$body-font: "Indie Flower", cursive;
 
 /* Mixins */
 @mixin flex($jc: stretch, $ai: stretch, $fdirection: row, $gap: 0) {

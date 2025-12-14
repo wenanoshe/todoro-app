@@ -1,0 +1,51 @@
+@use "../vars" as *;
+
+.add-todo {
+  position: sticky;
+  bottom: 0;
+  margin-top: auto;
+  padding-top: 1.5rem;
+  background-color: $white;
+  border-top: 2px solid $black-3;
+
+  &__form {
+    @include flex(space-between, center, row, 1rem);
+    background-color: $white;
+    align-items: flex-end;
+  }
+
+  &__input {
+    flex: 1;
+    padding: 0.85rem 1rem;
+    border-radius: $radius;
+    border: 2px solid $black-2;
+  }
+
+  &__actions {
+    @include flex(flex-end, center, row, 0.5rem);
+  }
+
+  &__cancel {
+    padding: 0.85rem 1.2rem;
+    border-radius: $radius;
+    border: 2px solid $black-2;
+    background-color: transparent;
+    color: $black;
+    cursor: pointer;
+  }
+
+  &__submit {
+    padding: 0.85rem 1.5rem;
+    border-radius: $radius;
+    border: none;
+    background-color: $pale-blue;
+    color: $white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color $speed ease;
+
+    &:hover {
+      background-color: darken($pale-blue, 5%);
+    }
+  }
+}

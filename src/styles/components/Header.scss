@@ -1,0 +1,15 @@
+@use "../vars" as *;
+
+.header {
+  @include flex(space-between, center, row, 1rem);
+  margin-bottom: 2rem;
+
+  &__title {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  &__filters {
+    margin-left: auto;
+  }
+}
